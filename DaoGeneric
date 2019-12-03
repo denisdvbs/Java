@@ -1,0 +1,20 @@
+package dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import posjavamavenhibernate.HibernateUtil;
+
+public class DaoGeneric <E> {   //<>PADRÃO
+
+	private EntityManager entityManger = HibernateUtil.gEntityManager();
+	
+	public void salvar (E entidade){
+		EntityTransaction transaction = entityManger.getTransaction();
+		transaction.begin();
+		entityManger.persist(entidade);
+		transaction.commit();
+		
+	}
+	
+}
