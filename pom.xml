@@ -29,7 +29,7 @@
 	<dependency>
 		<groupId>org.postgresql</groupId>
 		<artifactId>postgresql</artifactId>
-		<version>42.2.2</version> <!--  9.2-1003-jdbc4-->
+		<version>42.2.25</version> <!--  9.2-1003-jdbc4-->
 	</dependency>
 	
 	
